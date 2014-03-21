@@ -1,17 +1,15 @@
-name: GitHubPagesForGAP
-version: 0.1
-date: 21/03/2014
-description: A GitHubPages generator for GAP packages
+name: cvec
+version: 2.4
+date: 14/09/2012
+description: Compact vectors over finite fields
 
 authors:
-    - name: Max Horn
-      url: http://www.quendi.de/math
-    - name: A. U. Thor
+    - name: Max Neunhoeffer
+      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/
 
 maintainers:
-    - name: Max Horn
-      url: http://www.quendi.de/math
-    - name: Jan Itor
+    - name: Max Neunhoeffer
+      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/
 
 GAP: ">=4.5.5"
 
@@ -20,24 +18,19 @@ needed-pkgs:
       version: ">= 1.2"
     - name: "IO"
       version: ">= 4.1"
-
-suggested-pkgs:
     - name: "orb"
       version: ">= 4.2"
 
-www: http://fingolfin.github.io/GitHubPagesForGAP/
-readme: http://fingolfin.github.io/GitHubPagesForGAP/README
-packageinfo: http://fingolfin.github.io/GitHubPagesForGAP/PackageInfo.g
-github: https://github.com/fingolfin/GitHubPagesForGAP
+www: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec.html
+readme: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec/README.cvec
+packageinfo: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/fingolfin/GitHubPagesForGAP/releases/download/v0.1/GitHubPagesForGAP-0.1.tar.gz
-    - name: .tar.bz2
-      url: https://github.com/fingolfin/GitHubPagesForGAP/releases/download/v0.1/GitHubPagesForGAP-0.1.tar.bz2
+      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec/cvec-2.4.tar.gz
 
-abstract: This is a pseudo package that contains no actual  <span class="pkgname">GAP</span> code. Instead, it is a template for other  GAP packages that allows to quickly setup GitHub pages.
+abstract: This package provides an implementation of compact vectors over finite   fields. Contrary to earlier implementations no table lookups are used   but only word-based processor arithmetic. This allows for bigger finite   fields and higher speed.
 
-status: other
+status: deposited
 doc-html: doc/chap0.html
 doc-pdf: doc/manual.pdf
