@@ -1,13 +1,9 @@
 name: cvec
-version: 2.4
-date: 14/09/2012
+version: 2.5
+date: 31/04/2014
 description: Compact vectors over finite fields
 
 authors:
-    - name: Max Neunhoeffer
-      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/
-
-maintainers:
     - name: Max Neunhoeffer
       url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/
 
@@ -21,13 +17,15 @@ needed-pkgs:
     - name: "orb"
       version: ">= 4.2"
 
-www: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec.html
-readme: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec/README.cvec
-packageinfo: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec/PackageInfo.g
+www: http://neunhoef.github.io/cvec/
+readme: http://neunhoef.github.io/cvec/README
+packageinfo: http://neunhoef.github.io/cvec/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/cvec/cvec-2.4.tar.gz
+      url: https://github.com/neunhoef/cvec/releases/download/v2.5/cvec-2.5.tar.gz
+    - name: .tar.bz2
+      url: https://github.com/neunhoef/cvec/releases/download/v2.5/cvec-2.5.tar.bz2
 
 abstract: This package provides an implementation of compact vectors over finite   fields. Contrary to earlier implementations no table lookups are used   but only word-based processor arithmetic. This allows for bigger finite   fields and higher speed.
 

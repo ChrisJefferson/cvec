@@ -6,10 +6,10 @@
                        [1XCompact vectors over finite fields[101X
   
   
-                                  Version 2.4
+                                  Version 2.5
   
   
-                                 September 2012
+                                   March 2014
   
   
                                  Max Neunhöffer
@@ -40,6 +40,7 @@
   1 [33X[0;0YIntroduction[133X
     1.1 [33X[0;0YPhilosophy[133X
     1.2 [33X[0;0YOverview over this manual[133X
+    1.3 [33X[0;0YFeedback[133X
   2 [33X[0;0YInstallation of the [5Xcvec[105X-Package[133X
   3 [33X[0;0YThe Data Structures[133X
     3.1 [33X[0;0YFinite field elements[133X
