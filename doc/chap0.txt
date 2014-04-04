@@ -6,7 +6,7 @@
                        [1XCompact vectors over finite fields[101X
   
   
-                                  Version 2.5
+                                 Version 2.5.1
   
   
                                    March 2014
