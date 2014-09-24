@@ -24,8 +24,7 @@
   [29X[2XEmptySemiEchelonBasis[102X( [3Xv[103X ) [32X method
   [6XReturns:[106X  [33X[0;10Ya new mutable empty semi echelonised basis[133X
   
-  [33X[0;0YThe  argument  [3Xv[103X  must  be  a  sample  vector. Also a [10Xcvecclass[110X can be given
-  instead.[133X
+  [33X[0;0YThe argument [3Xv[103X must be a sample vector.[133X
   
   [1X6.1-2 MakeSemiEchelonBasis[101X
   
@@ -91,7 +90,7 @@
   echelonised result basis.[133X
   
   [33X[0;0YThe  [21XT[121X  indicates,  that  the  transformation  is  calculated,  that is, the
-  resulting  record [10Xr[110X will have a compontent [10Xcoeffs[110X, such that [10Xr.coeffs * [3Xm[103X[10X[110X is
+  resulting  record  [10Xr[110X will have a component [10Xcoeffs[110X, such that [10Xr.coeffs * [3Xm[103X[10X[110X is
   equal  to  [10Xr.vectors[110X component of the semi echelonised result. Further, with
   given  letter [21XT[121X there will be a component [10Xrelations[110X which is a basis for the
   (left) nullspace of [3Xm[103X.[133X

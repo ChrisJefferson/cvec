@@ -46,7 +46,7 @@
   the  Conway  polynomial  [22Xc ∈ GF(p)[x][122X. We always represent field elements of
   [22XGF(p^d)[122X   by   polynomials  [23Xa  =  \sum_{{i=0}}^{{d-1}}  a_i  x^i[123X  where  the
   coefficients  [22Xa_i[122X  are in [22XGF(p)[122X. Because [22Xc[122X is monic, this gives a one-to-one
-  correspondance between polynomials and finite field elements.[133X
+  correspondence between polynomials and finite field elements.[133X
   
   [33X[0;0YThe  memory  layout  for  compressed  vectors is determined by two important
   constants,  depending only on [22Xp[122X and the word length of the machine. The word
@@ -284,7 +284,7 @@
   machine with little endianess, which means, that the lower significant bytes
   of  a  [10XWord[110X are stored in lower addresses. The reasons for this decision are
   firstly  that  64bit  machines  can  do  the bit shifting to convert between
-  internal  and externel representation easier using their wide registers, and
+  internal  and external representation easier using their wide registers, and
   secondly,  that  the  nowadays most popular architectures i386 and AMD64 use
   both  little endianess, such that conversion is only necessary on a minority
   of machines.[133X

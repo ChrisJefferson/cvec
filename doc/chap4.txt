@@ -256,7 +256,7 @@
   [29X[2XMultRowVector[102X( [3Xv[103X, [3Xs[103X, [3Xfr[103X, [3Xto[103X ) [32X method
   [6XReturns:[106X  [33X[0;10Ynothing[133X
   
-  [33X[0;0Y[3Xv[103X  must be a mutable [10Xcvec[110X and [3Xs[103X a scalar (see Subsection [14X4.2-1[114X). Multiplys [3Xv[103X
+  [33X[0;0Y[3Xv[103X must be a mutable [10Xcvec[110X and [3Xs[103X a scalar (see Subsection [14X4.2-1[114X). Multiplies [3Xv[103X
   by  [3Xs[103X  modifying [3Xv[103X. If [3Xfr[103X and [3Xto[103X are given, they give a hint, that [3Xv[103X is zero
   outside  positions [3Xfr[103X to [3Xto[103X (inclusively). The method can, if it chooses so,
   save  time  by  not  computing  outside that range. In fact, the implemented

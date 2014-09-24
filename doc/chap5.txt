@@ -70,13 +70,13 @@
   
   [1X5.1-6 CVEC_IdentityMat[101X
   
-  [29X[2XCVEC_IdentityMat[102X( [3Xrows[103X, [3Xcl[103X ) [32X function
-  [29X[2XCVEC_IdentityMat[102X( [3Xrows[103X, [3Xcols[103X, [3Xp[103X, [3Xd[103X ) [32X function
+  [29X[2XCVEC_IdentityMat[102X( [3Xcl[103X ) [32X function
+  [29X[2XCVEC_IdentityMat[102X( [3Xn[103X, [3Xp[103X, [3Xd[103X ) [32X function
   [6XReturns:[106X  [33X[0;10Ya new [10Xcmat[110X[133X
   
-  [33X[0;0YCreates  an  identity  matrix with [3Xrows[103X rows and [3Xcols[103X columns over the field
-  [10XGF([3Xp[103X[10X,[3Xd[103X[10X)[110X.  If  a  [10Xcvecclass[110X  [3Xcl[103X is given, the number of columns and the field
-  follow from that.[133X
+  [33X[0;0YCreates  an  identity matrix with [3Xn[103X rows and columns over the field [10XGF([3Xp[103X[10X,[3Xd[103X[10X)[110X.
+  If  a [10Xcvecclass[110X [3Xcl[103X is given, the number of columns and the field follow from
+  that.[133X
   
   [1X5.1-7 CVEC_RandomMat[101X
   

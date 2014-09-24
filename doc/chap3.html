@@ -19,6 +19,7 @@
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap2.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap4.html">[Next Chapter]</a>&nbsp;  </div>
 
+<p id="mathjaxlink" class="pcenter"><a href="chap3_mj.html">[MathJax on]</a></p>
 <p><a id="X81F8AEBD87002F6F" name="X81F8AEBD87002F6F"></a></p>
 <div class="ChapSects"><a href="chap3.html#X81F8AEBD87002F6F">3 <span class="Heading">The Data Structures</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap3.html#X7B9DCCCC83400B47">3.1 <span class="Heading">Finite field elements</span></a>
@@ -71,7 +72,7 @@
 
 <h5>3.2-1 <span class="Heading">Packing of prime field elements</span></h5>
 
-<p>For this section, we assume that the base field is <span class="SimpleMath">GF(p^d)</span>, the finite field with <span class="SimpleMath">p^d</span> elements, where <span class="SimpleMath">p</span> is a prime and <span class="SimpleMath">d</span> is a positive integer. This is realized as a field extension of degree <span class="SimpleMath">d</span> over the prime field <span class="SimpleMath">GF(p)</span> using the Conway polynomial <span class="SimpleMath">c ∈ GF(p)[x]</span>. We always represent field elements of <span class="SimpleMath">GF(p^d)</span> by polynomials <span class="Math">a = \sum_{{i=0}}^{{d-1}} a_i x^i</span> where the coefficients <span class="SimpleMath">a_i</span> are in <span class="SimpleMath">GF(p)</span>. Because <span class="SimpleMath">c</span> is monic, this gives a one-to-one correspondance between polynomials and finite field elements.</p>
+<p>For this section, we assume that the base field is <span class="SimpleMath">GF(p^d)</span>, the finite field with <span class="SimpleMath">p^d</span> elements, where <span class="SimpleMath">p</span> is a prime and <span class="SimpleMath">d</span> is a positive integer. This is realized as a field extension of degree <span class="SimpleMath">d</span> over the prime field <span class="SimpleMath">GF(p)</span> using the Conway polynomial <span class="SimpleMath">c ∈ GF(p)[x]</span>. We always represent field elements of <span class="SimpleMath">GF(p^d)</span> by polynomials <span class="Math">a = \sum_{{i=0}}^{{d-1}} a_i x^i</span> where the coefficients <span class="SimpleMath">a_i</span> are in <span class="SimpleMath">GF(p)</span>. Because <span class="SimpleMath">c</span> is monic, this gives a one-to-one correspondence between polynomials and finite field elements.</p>
 
 <p>The memory layout for compressed vectors is determined by two important constants, depending only on <span class="SimpleMath">p</span> and the word length of the machine. The word length is 4 bytes on 32bit machines (for example on the i386 architecture) and 8 bytes on 64bit machines (for example on the AMD64 architecture). More concretely, a "<code class="code">Word</code>" is an <code class="code">unsigned long int</code> in C and the length of a <code class="code">Word</code> is <code class="code">sizeof(unsigned long int)</code>.</p>
 
@@ -368,7 +369,7 @@
 
 <p>This section describes the external representation of matrices. A special data format is needed here, because of differences between computer architectures with respect to word length (32bit/64bit) and endianess. The term "endianess" refers to the fact, that different architectures store their long words in a different way in memory, namely they order the bytes that together make up a long word in different orders.</p>
 
-<p>The external representation is the same as the internal format of a 32bit machine with little endianess, which means, that the lower significant bytes of a <code class="code">Word</code> are stored in lower addresses. The reasons for this decision are firstly that 64bit machines can do the bit shifting to convert between internal and externel representation easier using their wide registers, and secondly, that the nowadays most popular architectures i386 and AMD64 use both little endianess, such that conversion is only necessary on a minority of machines.</p>
+<p>The external representation is the same as the internal format of a 32bit machine with little endianess, which means, that the lower significant bytes of a <code class="code">Word</code> are stored in lower addresses. The reasons for this decision are firstly that 64bit machines can do the bit shifting to convert between internal and external representation easier using their wide registers, and secondly, that the nowadays most popular architectures i386 and AMD64 use both little endianess, such that conversion is only necessary on a minority of machines.</p>
 
 <p><a id="X8598B059867CA116" name="X8598B059867CA116"></a></p>
 

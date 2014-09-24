@@ -19,6 +19,7 @@
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap5.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap7.html">[Next Chapter]</a>&nbsp;  </div>
 
+<p id="mathjaxlink" class="pcenter"><a href="chap6_mj.html">[MathJax on]</a></p>
 <p><a id="X8571243581CAD780" name="X8571243581CAD780"></a></p>
 <div class="ChapSects"><a href="chap6.html#X8571243581CAD780">6 <span class="Heading">Linear Algebra routines</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap6.html#X79C4BA5B821BBE58">6.1 <span class="Heading">Semi echelonised bases and cleaning</span></a>
@@ -70,7 +71,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; EmptySemiEchelonBasis</code>( <var class="Arg">v</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a new mutable empty semi echelonised basis</p>
 
-<p>The argument <var class="Arg">v</var> must be a sample vector. Also a <code class="code">cvecclass</code> can be given instead.</p>
+<p>The argument <var class="Arg">v</var> must be a sample vector.</p>
 
 <p><a id="X7893E4AB7C5D9E31" name="X7893E4AB7C5D9E31"></a></p>
 
@@ -125,7 +126,7 @@
 
 <p>The "X" indicates, that the input matrix may be destroyed, that is, the rows of <var class="Arg">m</var> will be changed and the very same objects be used in the semi echelonised result basis.</p>
 
-<p>The "T" indicates, that the transformation is calculated, that is, the resulting record <code class="code">r</code> will have a compontent <code class="code">coeffs</code>, such that <code class="code">r.coeffs * <var class="Arg">m</var></code> is equal to <code class="code">r.vectors</code> component of the semi echelonised result. Further, with given letter "T" there will be a component <code class="code">relations</code> which is a basis for the (left) nullspace of <var class="Arg">m</var>.</p>
+<p>The "T" indicates, that the transformation is calculated, that is, the resulting record <code class="code">r</code> will have a component <code class="code">coeffs</code>, such that <code class="code">r.coeffs * <var class="Arg">m</var></code> is equal to <code class="code">r.vectors</code> component of the semi echelonised result. Further, with given letter "T" there will be a component <code class="code">relations</code> which is a basis for the (left) nullspace of <var class="Arg">m</var>.</p>
 
 <p>The "P" indicates, that a component <code class="code">r.p</code> is calculated such that <code class="code">r.p * r.vectors</code> is the original matrix <var class="Arg">m</var>.</p>
 
