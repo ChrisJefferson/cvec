@@ -39,7 +39,7 @@
   [2XCharAndMinimalPolynomialOfMatrix[102X  6.2-4
   [2XChooseHashFunction[102X  4.7-2
   [2XChooseHashFunction[102X  5.4-9
-  [2XCleanRow[102X  6.1-5
+  [2XCleanRow[102X  6.1-4
   [2XCMat[102X  5.1-1
   [2XCMat[102X  5.1-1
   [2XCMat[102X  5.1-2
@@ -107,10 +107,9 @@
   [2XKroneckerProduct[102X  5.3-16
   [2XLength[102X  4.4-6
   [2XLength[102X  5.2-7
-  [2XLength[102X (for a semi echelonised basis)  6.1-4
+  [2XLength[102X (for a semi echelonised basis)  6.1-3
   [2XLT[102X  4.4-2
   [2XLT[102X  5.4-2
-  [2XMakeSemiEchelonBasis[102X  6.1-2
   [2XMatrix[102X  5.1-9
   [2XMatrixNC[102X  5.1-9
   [2XMinimalPolynomialOfMatrix[102X  6.2-3
@@ -135,12 +134,13 @@
   [2XRandomize[102X (cmatrandomsource)  5.9-1
   [2XRemove[102X  5.2-2
   [2XScalarProduct[102X (cveccvec)  4.2-9
-  [2XSemiEchelonRows[102X  6.1-6
-  [2XSemiEchelonRowsP[102X  6.1-10
-  [2XSemiEchelonRowsPX[102X  6.1-11
-  [2XSemiEchelonRowsT[102X  6.1-8
-  [2XSemiEchelonRowsTX[102X  6.1-9
-  [2XSemiEchelonRowsX[102X  6.1-7
+  [2XSemiEchelonBasisMutable[102X  6.1-5
+  [2XSemiEchelonBasisMutable[102X  6.1-6
+  [2XSemiEchelonBasisMutableP[102X  6.1-10
+  [2XSemiEchelonBasisMutablePX[102X  6.1-11
+  [2XSemiEchelonBasisMutableT[102X  6.1-8
+  [2XSemiEchelonBasisMutableTX[102X  6.1-9
+  [2XSemiEchelonBasisMutableX[102X  6.1-7
   [2XShallowCopy[102X (cvec)  4.1-14
   [2XShallowCopy[102X  5.2-8
   [2XTransposedMat[102X  5.3-15
@@ -148,7 +148,7 @@
   [2XUnGreaseMat[102X  5.8-2
   [2XUnpack[102X (cvec)  4.5-1
   [2XUnpack[102X (cmat)  5.9-3
-  [2XVectors[102X  6.1-3
+  [2XVectors[102X  6.1-2
   [2XZeroMutable[102X (cvec)  4.2-10
   [2XZeroMutable[102X (cmat)  5.3-10
   [2XZeroSameMutability[102X (cvec)  4.1-13

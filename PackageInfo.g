@@ -7,8 +7,8 @@ SetPackageInfo( rec(
 
 PackageName := "cvec",
 Subtitle := "Compact vectors over finite fields",
-Version := "2.5.3",
-Date := "08/11/2014", # dd/mm/yyyy format
+Version := "2.5.4",
+Date := "18/12/2015", # dd/mm/yyyy format
 
 ##  Information about authors and maintainers.
 Persons := [
@@ -64,10 +64,10 @@ Status := "deposited",
 # AcceptDate := "08/1999",
 #AcceptDate := "",
 
-PackageWWWHome := "http://gap-system.github.io/cvec/",
+PackageWWWHome := "http://gap-packages.github.io/cvec/",
 README_URL     := Concatenation(~.PackageWWWHome, "README"),
 PackageInfoURL := Concatenation(~.PackageWWWHome, "PackageInfo.g"),
-ArchiveURL     := Concatenation("https://github.com/gap-system/cvec/",
+ArchiveURL     := Concatenation("https://github.com/gap-packages/cvec/",
                                 "releases/download/v", ~.Version,
                                 "/cvec-", ~.Version),
 ArchiveFormats := ".tar.gz .tar.bz2",
@@ -116,7 +116,7 @@ end,
 
 ##  *Optional*, but recommended: path relative to package root to a file which 
 ##  contains as many tests of the package functionality as sensible.
-#TestFile := "tst/testall.g",
+TestFile := "tst/testall.g",
 
 ##  *Optional*: Here you can list some keyword related to the topic 
 ##  of the package.

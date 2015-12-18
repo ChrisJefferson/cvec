@@ -1,6 +1,6 @@
 name: cvec
-version: 2.5.3
-date: 08/11/2014
+version: 2.5.4
+date: 18/12/2015
 description: Compact vectors over finite fields
 
 authors:
@@ -19,20 +19,20 @@ needed-pkgs:
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
     - name: "IO"
       version: ">= 4.1"
-      url: "http://gap-system.github.io/io/"
+      url: "http://gap-packages.github.io/io/"
     - name: "orb"
       version: ">= 4.2"
-      url: "http://gap-system.github.io/orb/"
+      url: "http://gap-packages.github.io/orb/"
 
-www: http://gap-system.github.io/cvec/
-readme: http://gap-system.github.io/cvec/README
-packageinfo: http://gap-system.github.io/cvec/PackageInfo.g
+www: http://gap-packages.github.io/cvec/
+readme: http://gap-packages.github.io/cvec/README
+packageinfo: http://gap-packages.github.io/cvec/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/gap-system/cvec/releases/download/v2.5.3/cvec-2.5.3.tar.gz
+      url: https://github.com/gap-packages/cvec/releases/download/v2.5.4/cvec-2.5.4.tar.gz
     - name: .tar.bz2
-      url: https://github.com/gap-system/cvec/releases/download/v2.5.3/cvec-2.5.3.tar.bz2
+      url: https://github.com/gap-packages/cvec/releases/download/v2.5.4/cvec-2.5.4.tar.bz2
 
 abstract: This package provides an implementation of compact vectors over finite   fields. Contrary to earlier implementations no table lookups are used   but only word-based processor arithmetic. This allows for bigger finite   fields and higher speed.
 

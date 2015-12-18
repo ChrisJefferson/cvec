@@ -29,16 +29,16 @@
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X87855EEA8779C855">6.1-1 EmptySemiEchelonBasis</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7893E4AB7C5D9E31">6.1-2 MakeSemiEchelonBasis</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7D12102B824C97B4">6.1-3 Vectors</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8464F2B87BCA3D34">6.1-4 Length</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7F4EA39D7D18D9B7">6.1-5 CleanRow</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X80E1EAE17F8D03DF">6.1-6 SemiEchelonRows</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7DD036268036DB7D">6.1-7 SemiEchelonRowsX</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7D4B52E47A44F641">6.1-8 SemiEchelonRowsT</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X82160419798B73D4">6.1-9 SemiEchelonRowsTX</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7D3D8EA58707E289">6.1-10 SemiEchelonRowsP</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8450C84984C8671C">6.1-11 SemiEchelonRowsPX</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7D12102B824C97B4">6.1-2 Vectors</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8464F2B87BCA3D34">6.1-3 Length</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7F4EA39D7D18D9B7">6.1-4 CleanRow</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X82A37BC982B1D8CA">6.1-5 SemiEchelonBasisMutable</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X82A37BC982B1D8CA">6.1-6 SemiEchelonBasisMutable</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X839298477E3F7345">6.1-7 SemiEchelonBasisMutableX</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8309FC85858FC96B">6.1-8 SemiEchelonBasisMutableT</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X845EFC3B87BED1BB">6.1-9 SemiEchelonBasisMutableTX</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X837F20C4831FA08E">6.1-10 SemiEchelonBasisMutableP</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X8218306B812EB85E">6.1-11 SemiEchelonBasisMutablePX</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7E5C2C297CAAE3FB">6.1-12 MutableNullspaceMat</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7A9596C98725862E">6.1-13 MutableNullspaceMatX</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap6_mj.html#X7DA0D5887DB12DC4">6.1-14 NullspaceMat</a></span>
@@ -65,7 +65,7 @@
 
 <p>Note that for technical reasons another component <code class="code">helper</code> is bound containing a <code class="code">cvec</code> of length <span class="SimpleMath">\(1\)</span> over the same field.</p>
 
-<p>Note further that the output of the <strong class="pkg">GAP</strong> library operation <code class="func">SemiEchelonMat</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) is not compatible to this setup, because it contains a component <code class="code">heads</code> that contains at position <span class="SimpleMath">\(i\)</span>, if nonzero, the number of the row for that the pivot element is in column <span class="SimpleMath">\(i\)</span>.</p>
+<p>Note further that the output of the <strong class="pkg">GAP</strong> library operation <code class="func">SemiEchelonMat</code> (<a href="/Users/mhorn/Projekte/GAP/gap.github/doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) is not compatible to this setup, because it contains a component <code class="code">heads</code> that contains at position <span class="SimpleMath">\(i\)</span>, if nonzero, the number of the row for that the pivot element is in column <span class="SimpleMath">\(i\)</span>.</p>
 
 <p><a id="X87855EEA8779C855" name="X87855EEA8779C855"></a></p>
 
@@ -74,20 +74,11 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; EmptySemiEchelonBasis</code>( <var class="Arg">v</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a new mutable empty semi echelonised basis</p>
 
-<p>The argument <var class="Arg">v</var> must be a sample vector.</p>
-
-<p><a id="X7893E4AB7C5D9E31" name="X7893E4AB7C5D9E31"></a></p>
-
-<h5>6.1-2 MakeSemiEchelonBasis</h5>
-
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; MakeSemiEchelonBasis</code>( <var class="Arg">b</var> )</td><td class="tdright">( method )</td></tr></table></div>
-<p>Returns: a semi echelonised basis</p>
-
-<p>Turns the output <var class="Arg">b</var> of <code class="func">SemiEchelonMat</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) into a valid semi echelonised basis in the sense of the <strong class="pkg">cvec</strong> package. This means that the component <code class="code">pivots</code> is calculated from the component <code class="code">heads</code>. Use this function only if necessary. Directly use <code class="func">SemiEchelonRows</code> (<a href="chap6_mj.html#X80E1EAE17F8D03DF"><span class="RefLink">6.1-6</span></a>) instead.</p>
+<p>The argument <var class="Arg">v</var> must be a sample vector or matrix. If it is a matrix, then one of its rows is taken as sample vector.</p>
 
 <p><a id="X7D12102B824C97B4" name="X7D12102B824C97B4"></a></p>
 
-<h5>6.1-3 Vectors</h5>
+<h5>6.1-2 Vectors</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Vectors</code>( <var class="Arg">b</var> )</td><td class="tdright">( operation )</td></tr></table></div>
 <p>Returns: a matrix</p>
@@ -96,7 +87,7 @@
 
 <p><a id="X8464F2B87BCA3D34" name="X8464F2B87BCA3D34"></a></p>
 
-<h5>6.1-4 Length</h5>
+<h5>6.1-3 Length</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; Length</code>( <var class="Arg">b</var> )</td><td class="tdright">( operation )</td></tr></table></div>
 <p>Returns: an integer</p>
@@ -105,7 +96,7 @@
 
 <p><a id="X7F4EA39D7D18D9B7" name="X7F4EA39D7D18D9B7"></a></p>
 
-<h5>6.1-5 CleanRow</h5>
+<h5>6.1-4 CleanRow</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CleanRow</code>( <var class="Arg">b</var>, <var class="Arg">v</var>, <var class="Arg">extend</var>, <var class="Arg">dec</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: <code class="code">true</code> or <code class="code">false</code></p>
@@ -116,16 +107,25 @@
 
 <p>The argument <var class="Arg">dec</var> is either <code class="code">fail</code> in which case it is not used or a vector over the same field as <var class="Arg">v</var> that is at least as long as the number <span class="SimpleMath">\(n\)</span> of vectors in <var class="Arg">b</var> (plus one if <var class="Arg">extend</var> is <code class="code">true</code>). In this case, the first <span class="SimpleMath">\(n\)</span> components of <var class="Arg">dec</var> are changed such that <span class="SimpleMath">\(\sum_{{i=1}}^{n} \textit{dec}_i \textit{b}_i\)</span>. If <var class="Arg">extend</var> is <code class="code">true</code> and <var class="Arg">v</var> is not contained in the span of the vectors in <var class="Arg">b</var> and <var class="Arg">dec</var> is a vector, then the first <span class="SimpleMath">\(n+1\)</span> components of <var class="Arg">dec</var> are changed such that <span class="SimpleMath">\(\textit{v} = \sum_{{i=1}}^{n+1} \textit{dec}_i \textit{b}_i\)</span>.</p>
 
-<p><a id="X80E1EAE17F8D03DF" name="X80E1EAE17F8D03DF"></a></p>
+<p><a id="X82A37BC982B1D8CA" name="X82A37BC982B1D8CA"></a></p>
 
-<h5>6.1-6 SemiEchelonRows</h5>
+<h5>6.1-5 SemiEchelonBasisMutable</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonRows</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutable</code>( <var class="Arg">b</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<p>Returns: a semi echelonised basis</p>
+
+<p>Turns the output <var class="Arg">b</var> of <code class="func">SemiEchelonMat</code> (<a href="/Users/mhorn/Projekte/GAP/gap.github/doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) into a valid semi echelonised basis in the sense of the <strong class="pkg">cvec</strong> package. This means that the component <code class="code">pivots</code> is calculated from the component <code class="code">heads</code>. Use this function only if absolutely necessary. Instead, directly invoke <code class="func">SemiEchelonBasisMutable</code> on the original matrix.</p>
+
+<p><a id="X82A37BC982B1D8CA" name="X82A37BC982B1D8CA"></a></p>
+
+<h5>6.1-6 SemiEchelonBasisMutable</h5>
+
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutable</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
 <p>The argument <var class="Arg">m</var> must be a <code class="code">cmat</code>. This method calculates a semi echelonised basis for the row space of <var class="Arg">m</var>.</p>
 
-<p>There are a number of similar operations the names of which are derived from <code class="func">SemiEchelonRows</code> by appending single letters: The letters "P", "T" and "X" are modifiers and there are operations for most of the <span class="SimpleMath">\(8\)</span> combinations of those letters being present or not respectively. Always give the present letters in alphabetical order.</p>
+<p>There are a number of similar operations the names of which are derived from <code class="func">SemiEchelonBasisMutable</code> by appending single letters: The letters "P", "T" and "X" are modifiers and there are operations for most of the <span class="SimpleMath">\(8\)</span> combinations of those letters being present or not respectively. Always give the present letters in alphabetical order.</p>
 
 <p>The "X" indicates, that the input matrix may be destroyed, that is, the rows of <var class="Arg">m</var> will be changed and the very same objects be used in the semi echelonised result basis.</p>
 
@@ -135,50 +135,50 @@
 
 <p>Currently the variants with "P" and "T" both present are not implement because they will probably not be very useful.</p>
 
-<p><a id="X7DD036268036DB7D" name="X7DD036268036DB7D"></a></p>
+<p><a id="X839298477E3F7345" name="X839298477E3F7345"></a></p>
 
-<h5>6.1-7 SemiEchelonRowsX</h5>
+<h5>6.1-7 SemiEchelonBasisMutableX</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonRowsX</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutableX</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
-<p>Same as <code class="func">SemiEchelonRows</code> (<a href="chap6_mj.html#X80E1EAE17F8D03DF"><span class="RefLink">6.1-6</span></a>) but destructive in <var class="Arg">m</var>.</p>
+<p>Same as <code class="func">SemiEchelonBasisMutable</code> (<a href="chap6_mj.html#X82A37BC982B1D8CA"><span class="RefLink">6.1-6</span></a>) but destructive in <var class="Arg">m</var>.</p>
 
-<p><a id="X7D4B52E47A44F641" name="X7D4B52E47A44F641"></a></p>
+<p><a id="X8309FC85858FC96B" name="X8309FC85858FC96B"></a></p>
 
-<h5>6.1-8 SemiEchelonRowsT</h5>
+<h5>6.1-8 SemiEchelonBasisMutableT</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonRowsT</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutableT</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
-<p>Same as <code class="func">SemiEchelonRows</code> (<a href="chap6_mj.html#X80E1EAE17F8D03DF"><span class="RefLink">6.1-6</span></a>) but in addition stores the transformation, see <code class="func">SemiEchelonRows</code> (<a href="chap6_mj.html#X80E1EAE17F8D03DF"><span class="RefLink">6.1-6</span></a>).</p>
+<p>Same as <code class="func">SemiEchelonBasisMutable</code> (<a href="chap6_mj.html#X82A37BC982B1D8CA"><span class="RefLink">6.1-6</span></a>) but in addition stores the transformation, see <code class="func">SemiEchelonBasisMutable</code> (<a href="chap6_mj.html#X82A37BC982B1D8CA"><span class="RefLink">6.1-6</span></a>).</p>
 
-<p><a id="X82160419798B73D4" name="X82160419798B73D4"></a></p>
+<p><a id="X845EFC3B87BED1BB" name="X845EFC3B87BED1BB"></a></p>
 
-<h5>6.1-9 SemiEchelonRowsTX</h5>
+<h5>6.1-9 SemiEchelonBasisMutableTX</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonRowsTX</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutableTX</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
-<p>Same as <code class="func">SemiEchelonRowsT</code> (<a href="chap6_mj.html#X7D4B52E47A44F641"><span class="RefLink">6.1-8</span></a>) but destructive in <var class="Arg">m</var>.</p>
+<p>Same as <code class="func">SemiEchelonBasisMutableT</code> (<a href="chap6_mj.html#X8309FC85858FC96B"><span class="RefLink">6.1-8</span></a>) but destructive in <var class="Arg">m</var>.</p>
 
-<p><a id="X7D3D8EA58707E289" name="X7D3D8EA58707E289"></a></p>
+<p><a id="X837F20C4831FA08E" name="X837F20C4831FA08E"></a></p>
 
-<h5>6.1-10 SemiEchelonRowsP</h5>
+<h5>6.1-10 SemiEchelonBasisMutableP</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonRowsP</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutableP</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
-<p>Same as <code class="func">SemiEchelonRows</code> (<a href="chap6_mj.html#X80E1EAE17F8D03DF"><span class="RefLink">6.1-6</span></a>) but in addition stores the inverse transformation, see <code class="func">SemiEchelonRows</code> (<a href="chap6_mj.html#X80E1EAE17F8D03DF"><span class="RefLink">6.1-6</span></a>).</p>
+<p>Same as <code class="func">SemiEchelonBasisMutable</code> (<a href="chap6_mj.html#X82A37BC982B1D8CA"><span class="RefLink">6.1-6</span></a>) but in addition stores the inverse transformation, see <code class="func">SemiEchelonBasisMutable</code> (<a href="chap6_mj.html#X82A37BC982B1D8CA"><span class="RefLink">6.1-6</span></a>).</p>
 
-<p><a id="X8450C84984C8671C" name="X8450C84984C8671C"></a></p>
+<p><a id="X8218306B812EB85E" name="X8218306B812EB85E"></a></p>
 
-<h5>6.1-11 SemiEchelonRowsPX</h5>
+<h5>6.1-11 SemiEchelonBasisMutablePX</h5>
 
-<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonRowsPX</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
+<div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutablePX</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
-<p>Same as <code class="func">SemiEchelonRowsP</code> (<a href="chap6_mj.html#X7D3D8EA58707E289"><span class="RefLink">6.1-10</span></a>) but destructive in <var class="Arg">m</var>.</p>
+<p>Same as <code class="func">SemiEchelonBasisMutableP</code> (<a href="chap6_mj.html#X837F20C4831FA08E"><span class="RefLink">6.1-10</span></a>) but destructive in <var class="Arg">m</var>.</p>
 
 <p><a id="X7E5C2C297CAAE3FB" name="X7E5C2C297CAAE3FB"></a></p>
 
@@ -187,7 +187,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; MutableNullspaceMat</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a <code class="code">cmat</code></p>
 
-<p>Returns a <code class="code">cmat</code> the rows of which are a basis of the (left) nullspace of the <code class="code">cmat</code> <var class="Arg">m</var>. Internally, <code class="func">SemiEchelonRowsT</code> (<a href="chap6_mj.html#X7D4B52E47A44F641"><span class="RefLink">6.1-8</span></a>) is used and the component <code class="code">relations</code> of the result is returned. The result is mutable, which is the reason for the introduction of a new operation besides <code class="func">NullspaceMat</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap24_mj.html#X7DA0D5887DB12DC4"><span class="RefLink">Reference: NullspaceMat</span></a>).</p>
+<p>Returns a <code class="code">cmat</code> the rows of which are a basis of the (left) nullspace of the <code class="code">cmat</code> <var class="Arg">m</var>. Internally, <code class="func">SemiEchelonBasisMutableT</code> (<a href="chap6_mj.html#X8309FC85858FC96B"><span class="RefLink">6.1-8</span></a>) is used and the component <code class="code">relations</code> of the result is returned. The result is mutable, which is the reason for the introduction of a new operation besides <code class="func">NullspaceMat</code> (<a href="/Users/mhorn/Projekte/GAP/gap.github/doc/ref/chap24_mj.html#X7DA0D5887DB12DC4"><span class="RefLink">Reference: NullspaceMat</span></a>).</p>
 
 <p><a id="X7A9596C98725862E" name="X7A9596C98725862E"></a></p>
 
