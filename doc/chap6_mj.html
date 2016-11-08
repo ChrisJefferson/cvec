@@ -65,7 +65,7 @@
 
 <p>Note that for technical reasons another component <code class="code">helper</code> is bound containing a <code class="code">cvec</code> of length <span class="SimpleMath">\(1\)</span> over the same field.</p>
 
-<p>Note further that the output of the <strong class="pkg">GAP</strong> library operation <code class="func">SemiEchelonMat</code> (<a href="../../../doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) is not compatible to this setup, because it contains a component <code class="code">heads</code> that contains at position <span class="SimpleMath">\(i\)</span>, if nonzero, the number of the row for that the pivot element is in column <span class="SimpleMath">\(i\)</span>.</p>
+<p>Note further that the output of the <strong class="pkg">GAP</strong> library operation <code class="func">SemiEchelonMat</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) is not compatible to this setup, because it contains a component <code class="code">heads</code> that contains at position <span class="SimpleMath">\(i\)</span>, if nonzero, the number of the row for that the pivot element is in column <span class="SimpleMath">\(i\)</span>.</p>
 
 <p><a id="X87855EEA8779C855" name="X87855EEA8779C855"></a></p>
 
@@ -114,7 +114,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; SemiEchelonBasisMutable</code>( <var class="Arg">b</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a semi echelonised basis</p>
 
-<p>Turns the output <var class="Arg">b</var> of <code class="func">SemiEchelonMat</code> (<a href="../../../doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) into a valid semi echelonised basis in the sense of the <strong class="pkg">cvec</strong> package. This means that the component <code class="code">pivots</code> is calculated from the component <code class="code">heads</code>. Use this function only if absolutely necessary. Instead, directly invoke <code class="func">SemiEchelonBasisMutable</code> on the original matrix.</p>
+<p>Turns the output <var class="Arg">b</var> of <code class="func">SemiEchelonMat</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap24_mj.html#X7D5D6BD07B7E981B"><span class="RefLink">Reference: SemiEchelonMat</span></a>) into a valid semi echelonised basis in the sense of the <strong class="pkg">cvec</strong> package. This means that the component <code class="code">pivots</code> is calculated from the component <code class="code">heads</code>. Use this function only if absolutely necessary. Instead, directly invoke <code class="func">SemiEchelonBasisMutable</code> on the original matrix.</p>
 
 <p><a id="X82A37BC982B1D8CA" name="X82A37BC982B1D8CA"></a></p>
 
@@ -187,7 +187,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; MutableNullspaceMat</code>( <var class="Arg">m</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a <code class="code">cmat</code></p>
 
-<p>Returns a <code class="code">cmat</code> the rows of which are a basis of the (left) nullspace of the <code class="code">cmat</code> <var class="Arg">m</var>. Internally, <code class="func">SemiEchelonBasisMutableT</code> (<a href="chap6_mj.html#X8309FC85858FC96B"><span class="RefLink">6.1-8</span></a>) is used and the component <code class="code">relations</code> of the result is returned. The result is mutable, which is the reason for the introduction of a new operation besides <code class="func">NullspaceMat</code> (<a href="../../../doc/ref/chap24_mj.html#X7DA0D5887DB12DC4"><span class="RefLink">Reference: NullspaceMat</span></a>).</p>
+<p>Returns a <code class="code">cmat</code> the rows of which are a basis of the (left) nullspace of the <code class="code">cmat</code> <var class="Arg">m</var>. Internally, <code class="func">SemiEchelonBasisMutableT</code> (<a href="chap6_mj.html#X8309FC85858FC96B"><span class="RefLink">6.1-8</span></a>) is used and the component <code class="code">relations</code> of the result is returned. The result is mutable, which is the reason for the introduction of a new operation besides <code class="func">NullspaceMat</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap24_mj.html#X7DA0D5887DB12DC4"><span class="RefLink">Reference: NullspaceMat</span></a>).</p>
 
 <p><a id="X7A9596C98725862E" name="X7A9596C98725862E"></a></p>
 

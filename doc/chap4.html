@@ -528,7 +528,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; NumberFFVector</code>( <var class="Arg">v</var>, <var class="Arg">sz</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: an integer</p>
 
-<p>This implements the library operation <code class="func">NumberFFVector</code> (<a href="../../../doc/ref/chap23_mj.html#X872E17FF829DB50F"><span class="RefLink">Reference: NumberFFVector</span></a>). Note that only the case that <var class="Arg">sz</var> is the number of elements in the base field of <var class="Arg">v</var> is implemented. There is an inverse operation called <code class="func">CVecNumber</code> (<a href="chap4.html#X7A97E6E883E4BDCB"><span class="RefLink">4.5-4</span></a>).</p>
+<p>This implements the library operation <code class="func">NumberFFVector</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap23_mj.html#X872E17FF829DB50F"><span class="RefLink">Reference: NumberFFVector</span></a>). Note that only the case that <var class="Arg">sz</var> is the number of elements in the base field of <var class="Arg">v</var> is implemented. There is an inverse operation called <code class="func">CVecNumber</code> (<a href="chap4.html#X7A97E6E883E4BDCB"><span class="RefLink">4.5-4</span></a>).</p>
 
 <p><a id="X7A97E6E883E4BDCB" name="X7A97E6E883E4BDCB"></a></p>
 
@@ -538,7 +538,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CVecNumber</code>( <var class="Arg">nr</var>, <var class="Arg">p</var>, <var class="Arg">d</var>, <var class="Arg">l</var> )</td><td class="tdright">( operation )</td></tr></table></div>
 <p>Returns: a <code class="code">cvec</code></p>
 
-<p>This is the inverse operation to <code class="func">NumberFFVector</code> (<a href="../../../doc/ref/chap23_mj.html#X872E17FF829DB50F"><span class="RefLink">Reference: NumberFFVector</span></a>). Of course, the base field of the vector and its length has to be specified, either by giving a <code class="code">cvecclass</code> <var class="Arg">cl</var> or the parameters <var class="Arg">p</var>, <var class="Arg">d</var>, and <var class="Arg">l</var>. For both cases corresponding methods are available.</p>
+<p>This is the inverse operation to <code class="func">NumberFFVector</code> (<a href="/Users/mhorn/Projekte/GAP/repos/doc/ref/chap23_mj.html#X872E17FF829DB50F"><span class="RefLink">Reference: NumberFFVector</span></a>). Of course, the base field of the vector and its length has to be specified, either by giving a <code class="code">cvecclass</code> <var class="Arg">cl</var> or the parameters <var class="Arg">p</var>, <var class="Arg">d</var>, and <var class="Arg">l</var>. For both cases corresponding methods are available.</p>
 
 <p><a id="X853A85AE878B0CBF" name="X853A85AE878B0CBF"></a></p>
 
@@ -591,7 +591,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CVEC_HashFunctionForCVecs</code>( <var class="Arg">v</var>, <var class="Arg">data</var> )</td><td class="tdright">( function )</td></tr></table></div>
 <p>Returns: an integer hash value</p>
 
-<p>This is a hash function usable for the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/my-pkgs/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework. It takes as arguments a <code class="code">cvec</code> <var class="Arg">v</var> and a list <var class="Arg">data</var> of length <span class="SimpleMath">2</span>. The first entry of <var class="Arg">data</var> is the length of the hash table used and the second entry is the number of bytes looked at in the <code class="code">cvec</code>.</p>
+<p>This is a hash function usable for the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/neunhoef/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework. It takes as arguments a <code class="code">cvec</code> <var class="Arg">v</var> and a list <var class="Arg">data</var> of length <span class="SimpleMath">2</span>. The first entry of <var class="Arg">data</var> is the length of the hash table used and the second entry is the number of bytes looked at in the <code class="code">cvec</code>.</p>
 
 <p><a id="X7ACED4FB7C971A5A" name="X7ACED4FB7C971A5A"></a></p>
 
@@ -600,7 +600,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ChooseHashFunction</code>( <var class="Arg">v</var>, <var class="Arg">hashlen</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a record describing a hash function</p>
 
-<p>Chooses a hash function to store <code class="code">cvec</code>s like <var class="Arg">v</var> in a hash table of length <var class="Arg">hashlen</var>. The return value is a record with components <code class="code">func</code> and <code class="code">data</code> bound to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>) and a list of length <span class="SimpleMath">2</span> to be given as a second argument to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>). This allows to use <code class="code">cvec</code>s in the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/my-pkgs/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework.</p>
+<p>Chooses a hash function to store <code class="code">cvec</code>s like <var class="Arg">v</var> in a hash table of length <var class="Arg">hashlen</var>. The return value is a record with components <code class="code">func</code> and <code class="code">data</code> bound to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>) and a list of length <span class="SimpleMath">2</span> to be given as a second argument to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>). This allows to use <code class="code">cvec</code>s in the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/neunhoef/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework.</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap3.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap5.html">[Next Chapter]</a>&nbsp;  </div>
