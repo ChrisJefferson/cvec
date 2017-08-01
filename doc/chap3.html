@@ -45,7 +45,7 @@
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3.html#X7B82906C7FFF36F5">3.4-1 <span class="Heading">Byte ordering and word length</span></a>
 </span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3.html#X8598B059867CA116">3.4-2 <span class="Heading">The header of a <code class="code">cmat</code> file</span></a>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap3.html#X7ACD96C483D7DA8A">3.4-2 <span class="Heading">The header of a <code class="code">cmat</code> file</span></a>
 </span>
 </div></div>
 </div>
@@ -230,7 +230,7 @@
 <tr>
 <td class="tdcenter">8</td>
 <td class="tdleft"><code class="code">IDX_bestgrease</code></td>
-<td class="tdleft">the best grease level (see Section <span class="RefLink">???</span>)</td>
+<td class="tdleft">the best grease level (see Section <a href="chap5.html#X7DA0D38A7D5DBDFF"><span class="RefLink">5.8</span></a>)</td>
 </tr>
 <tr>
 <td class="tdcenter">9</td>
@@ -329,9 +329,9 @@
 
 <p>The length of the list in component <code class="code">rows</code> is <code class="code">len+1</code>, because the first position is equal to the integer <span class="SimpleMath">0</span> such that the type of the list <code class="code">rows</code> can always be computed efficiently. The rows are then stored in positions 2 to <code class="code">len+1</code>.</p>
 
-<p>The component <code class="code">greasehint</code> contains the greasing level for the next matrix multiplication, in which this matrix occurs as the factor on the right hand side (if greasing is worth the effort, see Section <span class="RefLink">???</span>).</p>
+<p>The component <code class="code">greasehint</code> contains the greasing level for the next matrix multiplication, in which this matrix occurs as the factor on the right hand side (if greasing is worth the effort, see Section <a href="chap5.html#X7DA0D38A7D5DBDFF"><span class="RefLink">5.8</span></a>).</p>
 
-<p>A <code class="code">cmat</code> can be "pre-greased", which just means, that a certain number of linear combinations of its rows is already precomputed (see Section <span class="RefLink">???</span>). In that case, the object is in the additional filter <code class="code">HasGreaseTab</code> and the following components are bound additionally:</p>
+<p>A <code class="code">cmat</code> can be "pre-greased", which just means, that a certain number of linear combinations of its rows is already precomputed (see Section <a href="chap5.html#X7DA0D38A7D5DBDFF"><span class="RefLink">5.8</span></a>). In that case, the object is in the additional filter <code class="code">HasGreaseTab</code> and the following components are bound additionally:</p>
 
 <div class="pcenter"><table class="GAPDocTable">
 <caption class="GAPDocTable"><b>Table: </b>Additional components of a <code class="code">cmat</code> object when pre-greased
@@ -371,7 +371,7 @@
 
 <p>The external representation is the same as the internal format of a 32bit machine with little endianess, which means, that the lower significant bytes of a <code class="code">Word</code> are stored in lower addresses. The reasons for this decision are firstly that 64bit machines can do the bit shifting to convert between internal and external representation easier using their wide registers, and secondly, that the nowadays most popular architectures i386 and AMD64 use both little endianess, such that conversion is only necessary on a minority of machines.</p>
 
-<p><a id="X8598B059867CA116" name="X8598B059867CA116"></a></p>
+<p><a id="X7ACD96C483D7DA8A" name="X7ACD96C483D7DA8A"></a></p>
 
 <h5>3.4-2 <span class="Heading">The header of a <code class="code">cmat</code> file</span></h5>
 

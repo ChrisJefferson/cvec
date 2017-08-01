@@ -520,7 +520,7 @@
   [29X[2XCVEC_WriteMat[102X( [3Xf[103X, [3Xm[103X ) [32X method
   [6XReturns:[106X  [33X[0;10Y[10Xtrue[110X or [10Xfail[110X[133X
   
-  [33X[0;0Y[3Xf[103X  must be a file object from the [5XIO[105X package (see [2XIsFile[102X ([14XIO: IsFile[114X)) and [3Xm[103X
+  [33X[0;0Y[3Xf[103X  must  be a file object from the [5XIO[105X package (see [2XIsFile[102X ([14XIsFile???[114X)) and [3Xm[103X
   must  be a [10Xcmat[110X. The matrix [3Xm[103X is written to the file [3Xf[103X. Note that the format
   (see  Section  [14X3.4[114X)  is  platform  independent,  such  that  matrices can be
   exchanged  between  different  architectures.  The  result  is  [10Xtrue[110X or [10Xfail[110X
@@ -555,7 +555,7 @@
   [29X[2XCVEC_ReadMat[102X( [3Xf[103X ) [32X method
   [6XReturns:[106X  [33X[0;10Ya [10Xcmat[110X or [10Xfail[110X[133X
   
-  [33X[0;0Y[3Xf[103X  must  be  a  file object from the [5XIO[105X package (see [2XIsFile[102X ([14XIO: IsFile[114X)). A
+  [33X[0;0Y[3Xf[103X  must  be  a  file  object from the [5XIO[105X package (see [2XIsFile[102X ([14XIsFile???[114X)). A
   matrix  is  read  from the file [3Xf[103X. Note that the format (see Section [14X3.4[114X) is
   platform  independent, such that matrices can be exchanged between different
   architectures. The result is [10Xfail[110X if an error occurred.[133X

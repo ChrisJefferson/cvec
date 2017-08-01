@@ -1,6 +1,6 @@
 name: cvec
-version: 2.5.6
-date: 08/11/2016
+version: 2.5.7
+date: 01/08/2017
 description: Compact vectors over finite fields
 
 authors:
@@ -30,9 +30,9 @@ packageinfo: https://gap-packages.github.io/cvec/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/gap-packages/cvec/releases/download/v2.5.6/cvec-2.5.6.tar.gz
+      url: https://github.com/gap-packages/cvec/releases/download/v2.5.7/cvec-2.5.7.tar.gz
     - name: .tar.bz2
-      url: https://github.com/gap-packages/cvec/releases/download/v2.5.6/cvec-2.5.6.tar.bz2
+      url: https://github.com/gap-packages/cvec/releases/download/v2.5.7/cvec-2.5.7.tar.bz2
 
 abstract: This package provides an implementation of compact vectors over finite   fields. Contrary to earlier implementations no table lookups are used   but only word-based processor arithmetic. This allows for bigger finite   fields and higher speed.
 

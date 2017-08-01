@@ -158,15 +158,15 @@
   
   [33X[0;0YA [10Xcvecclass[110X is a positional object with [22X5[122X components:[133X
   
-        Position   Name            Content                                                                        
-        ────────   ─────────────     
-           1       [10XIDX_fieldinfo[110X   a [10Xfieldinfo[110X object, see below                                                  
-           2       [10XIDX_len[110X         the length of the vector as immediate [5XGAP[105X integer                              
-           3       [10XIDX_wordlen[110X     the number of [10XWord[110Xs used as immediate [5XGAP[105X integer                              
-           4       [10XIDX_type[110X        a [5XGAP[105X type used to create new vectors                                          
-           5       [10XIDX_GF[110X          a [5XGAP[105X object for the base field                                                
-           6       [10XIDX_lens[110X        a list holding lengths of vectors in [10Xcvecclasses[110X for the same field            
-           7       [10XIDX_classes[110X     a list holding [10Xcvecclass[110Xes for the same field with lengths as in entry number 6
+        Position   Name            Content                                                                           
+        ────────   ─────────────   ───────────────────────────────────────────────────────────────────────────────  
+           1       [10XIDX_fieldinfo[110X   a [10Xfieldinfo[110X object, see below                                                     
+           2       [10XIDX_len[110X         the length of the vector as immediate [5XGAP[105X integer                                 
+           3       [10XIDX_wordlen[110X     the number of [10XWord[110Xs used as immediate [5XGAP[105X integer                                 
+           4       [10XIDX_type[110X        a [5XGAP[105X type used to create new vectors                                             
+           5       [10XIDX_GF[110X          a [5XGAP[105X object for the base field                                                   
+           6       [10XIDX_lens[110X        a list holding lengths of vectors in [10Xcvecclasses[110X for the same field               
+           7       [10XIDX_classes[110X     a list holding [10Xcvecclass[110Xes for the same field with lengths as in entry number 6   
   
        [1XTable:[101X Components of a [10Xcvecclass[110X
   
@@ -177,22 +177,22 @@
   [33X[0;0YThe  field  is  described  by  the  [5XGAP[105X  object  in  position 1, a so-called
   [10Xfieldinfo[110X object, which is described in the following table:[133X
   
-        [13XPosition[113X   Name             [13XContent[113X                                                                             
-        ────────   ──────────────     
-           1       [10XIDX_p[110X            [22Xp[122X as an immediate [5XGAP[105X integer                                                       
-           2       [10XIDX_d[110X            [22Xd[122X as an immediate [5XGAP[105X integer                                                       
-           3       [10XIDX_q[110X            [22Xq=p^d[122X as a [5XGAP[105X integer                                                              
-           4       [10XIDX_conway[110X       a [5XGAP[105X string containing the coefficients of the Conway Polynomial as unsigned int []
-           5       [10XIDX_bitsperel[110X    number of bits per element of the prime field ([10Xbitsperel[110X)                           
-           6       [10XIDX_elsperword[110X   prime field elements per [10XWord[110X ([10Xelsperword[110X)                                          
-           7       [10XIDX_wordinfo[110X     a [5XGAP[105X string containing C data for internal use                                     
-           8       [10XIDX_bestgrease[110X   the best grease level (see Section [14X???Greasing???[114X)                                  
-           9       [10XIDX_greasetabl[110X   the length of a grease table using best grease                                      
-           10      [10XIDX_filts[110X        a filter list for the creation of new vectors over this field                       
-           11      [10XIDX_tab1[110X         a table for [22XGF(q)[122X to [10X[0..q-1][110X conversion if [22Xq ≤ 65536[122X                               
-           12      [10XIDX_tab2[110X         a table for [10X[0..q-1][110X to [22XGF(q)[122X conversion if [22Xq ≤ 65536[122X                               
-           13      [10XIDX_size[110X         0 for [22Xq ≤ 65536[122X, otherwise 1 if [22Xq[122X is a [5XGAP[105X immediate integer and 2 if not           
-           14      [10XIDX_scafam[110X       the scalars family                                                                  
+        [13XPosition[113X   Name             [13XContent[113X                                                                                
+        ────────   ──────────────   ────────────────────────────────────────────────────────────────────────────────────  
+           1       [10XIDX_p[110X            [22Xp[122X as an immediate [5XGAP[105X integer                                                          
+           2       [10XIDX_d[110X            [22Xd[122X as an immediate [5XGAP[105X integer                                                          
+           3       [10XIDX_q[110X            [22Xq=p^d[122X as a [5XGAP[105X integer                                                                 
+           4       [10XIDX_conway[110X       a [5XGAP[105X string containing the coefficients of the Conway Polynomial as unsigned int []   
+           5       [10XIDX_bitsperel[110X    number of bits per element of the prime field ([10Xbitsperel[110X)                              
+           6       [10XIDX_elsperword[110X   prime field elements per [10XWord[110X ([10Xelsperword[110X)                                             
+           7       [10XIDX_wordinfo[110X     a [5XGAP[105X string containing C data for internal use                                        
+           8       [10XIDX_bestgrease[110X   the best grease level (see Section [14X5.8[114X)                                                
+           9       [10XIDX_greasetabl[110X   the length of a grease table using best grease                                         
+           10      [10XIDX_filts[110X        a filter list for the creation of new vectors over this field                          
+           11      [10XIDX_tab1[110X         a table for [22XGF(q)[122X to [10X[0..q-1][110X conversion if [22Xq ≤ 65536[122X                                  
+           12      [10XIDX_tab2[110X         a table for [10X[0..q-1][110X to [22XGF(q)[122X conversion if [22Xq ≤ 65536[122X                                  
+           13      [10XIDX_size[110X         0 for [22Xq ≤ 65536[122X, otherwise 1 if [22Xq[122X is a [5XGAP[105X immediate integer and 2 if not              
+           14      [10XIDX_scafam[110X       the scalars family                                                                     
   
        [1XTable:[101X Components of a [10Xfieldinfo[110X
   
@@ -229,13 +229,13 @@
   
   [33X[0;0YA [10Xcmat[110X object is a positional object with at least the following components:[133X
   
-        Component name   Content                                                  
-        ──────────────     
-        [10Xlen[110X              the number of rows, can be [22X0[122X                             
-        [10Xvecclass[110X         a [10Xcvecclass[110X object describing the class of rows          
-        [10Xscaclass[110X         a [10Xcscaclass[110X object holding a reference to [10XGF(p,d)[110X        
-        [10Xrows[110X             a list containing the rows of the matrix, which are [10Xcvec[110Xs
-        [10Xgreasehint[110X       the recommended greasing level                           
+        Component name   Content                                                     
+        ──────────────   ─────────────────────────────────────────────────────────  
+        [10Xlen[110X              the number of rows, can be [22X0[122X                                
+        [10Xvecclass[110X         a [10Xcvecclass[110X object describing the class of rows             
+        [10Xscaclass[110X         a [10Xcscaclass[110X object holding a reference to [10XGF(p,d)[110X           
+        [10Xrows[110X             a list containing the rows of the matrix, which are [10Xcvec[110Xs   
+        [10Xgreasehint[110X       the recommended greasing level                              
   
        [1XTable:[101X Components of a [10Xcmat[110X object
   
@@ -250,19 +250,19 @@
   
   [33X[0;0YThe  component  [10Xgreasehint[110X  contains  the greasing level for the next matrix
   multiplication,  in which this matrix occurs as the factor on the right hand
-  side (if greasing is worth the effort, see Section [14X???grease???[114X).[133X
+  side (if greasing is worth the effort, see Section [14X5.8[114X).[133X
   
   [33X[0;0YA [10Xcmat[110X can be [21Xpre-greased[121X, which just means, that a certain number of linear
-  combinations  of its rows is already precomputed (see Section [14X???grease???[114X).
-  In  that  case,  the object is in the additional filter [10XHasGreaseTab[110X and the
-  following components are bound additionally:[133X
+  combinations  of  its rows is already precomputed (see Section [14X5.8[114X). In that
+  case,  the object is in the additional filter [10XHasGreaseTab[110X and the following
+  components are bound additionally:[133X
   
-        Component name   Content                                                 
-        ──────────────     
-        [10Xgreaselev[110X        the grease level                                        
-        [10Xgreasetab[110X        the grease table, a list of lists of [10Xcvecs[110X              
-        [10Xgreaseblo[110X        the number of greasing blocks                           
-        [10Xspreadtab[110X        a lookup table for indexing the right linear combination
+        Component name   Content                                                    
+        ──────────────   ────────────────────────────────────────────────────────  
+        [10Xgreaselev[110X        the grease level                                           
+        [10Xgreasetab[110X        the grease table, a list of lists of [10Xcvecs[110X                 
+        [10Xgreaseblo[110X        the number of greasing blocks                              
+        [10Xspreadtab[110X        a lookup table for indexing the right linear combination   
   
        [1XTable:[101X Additional components of a [10Xcmat[110X object when pre-greased
   
@@ -295,11 +295,11 @@
   [33X[0;0YThe header of a [10Xcmat[110X file consists of 5 words of 64bit each, that are stored
   in little endian byte order:[133X
   
-        the magic value [21X[10XGAPCMat1[110X[121X as ASCII letters (8 bytes) in this order
-        the value of [22Xp[122X to describe the base field                        
-        the value of [22Xd[122X to describe the base field                        
-        the number of rows of the matrix                                 
-        the number of columns of the matrix                              
+        the magic value [21X[10XGAPCMat1[110X[121X as ASCII letters (8 bytes) in this order   
+        the value of [22Xp[122X to describe the base field                           
+        the value of [22Xd[122X to describe the base field                           
+        the number of rows of the matrix                                    
+        the number of columns of the matrix                                 
   
        [1XTable:[101X Header of a [10Xcmat[110X file
   

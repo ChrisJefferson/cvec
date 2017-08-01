@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <title>GAP (cvec) - Chapter 4: Vectors</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -49,11 +49,11 @@
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X788A3D6482290F7D">4.2-1 <span class="Heading">Handling of scalars in arithmetic operations</span></a>
 </span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7C2F565480B1A4A1">4.2-2 \+</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7CFEB1507E279EF2">4.2-3 \-</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7C2F565480B1A4A1"><code>4.2-2 \+</code></a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7CFEB1507E279EF2"><code>4.2-3 \-</code></a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7DD3036C847E12DC">4.2-4 AdditiveInverseSameMutability</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7A34F9AA8330EBB9">4.2-5 AdditiveInverseMutable</a></span>
-<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X8191F74E797B4A3D">4.2-6 \*</a></span>
+<span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X8191F74E797B4A3D"><code>4.2-6 \*</code></a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X820D829E87A82A80">4.2-7 AddRowVector</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X87D8F28D78BC14DD">4.2-8 MultRowVector</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7F4B8B747E88C59B">4.2-9 ScalarProduct</a></span>
@@ -96,7 +96,7 @@
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X81B99EEC7C134213">4.6-3 Characteristic</a></span>
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X81E3BBBB80096DC2">4.6-4 DegreeFFE</a></span>
 </div></div>
-<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4_mj.html#X7CB5FB4C7BBB87E9">4.7 <span class="Heading">Hashing techniques for <code class="code">cvec</code>s</span></a>
+<div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap4_mj.html#X823EFBDB7ED49554">4.7 <span class="Heading">Hashing techniques for <code class="code">cvec</code>s</span></a>
 </span>
 <div class="ContSSBlock">
 <span class="ContSS"><br /><span class="nocss">&nbsp;&nbsp;</span><a href="chap4_mj.html#X7F0228A18327F87D">4.7-1 CVEC_HashFunctionForCVecs</a></span>
@@ -276,7 +276,7 @@
 
 <p><a id="X7C2F565480B1A4A1" name="X7C2F565480B1A4A1"></a></p>
 
-<h5>4.2-2 \+</h5>
+<h5><code>4.2-2 \+</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \+</code>( <var class="Arg">v</var>, <var class="Arg">w</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: the sum <span class="SimpleMath">\(\textit{v}+\textit{w}\)</span> as a new <code class="code">cvec</code></p>
@@ -285,7 +285,7 @@
 
 <p><a id="X7CFEB1507E279EF2" name="X7CFEB1507E279EF2"></a></p>
 
-<h5>4.2-3 \-</h5>
+<h5><code>4.2-3 \-</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \-</code>( <var class="Arg">v</var>, <var class="Arg">w</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: the difference <span class="SimpleMath">\(\textit{v}-\textit{w}\)</span> as a new <code class="code">cvec</code></p>
@@ -313,7 +313,7 @@
 
 <p><a id="X8191F74E797B4A3D" name="X8191F74E797B4A3D"></a></p>
 
-<h5>4.2-6 \*</h5>
+<h5><code>4.2-6 \*</code></h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \*</code>( <var class="Arg">v</var>, <var class="Arg">s</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; \*</code>( <var class="Arg">s</var>, <var class="Arg">v</var> )</td><td class="tdright">( method )</td></tr></table></div>
@@ -583,7 +583,7 @@
 
 <p>Returns the degree of the base field of <var class="Arg">v</var> over its prime field (see <code class="func">BaseField</code> (<a href="chap4_mj.html#X842335E47DC49702"><span class="RefLink">4.6-2</span></a>)).</p>
 
-<p><a id="X7CB5FB4C7BBB87E9" name="X7CB5FB4C7BBB87E9"></a></p>
+<p><a id="X823EFBDB7ED49554" name="X823EFBDB7ED49554"></a></p>
 
 <h4>4.7 <span class="Heading">Hashing techniques for <code class="code">cvec</code>s</span></h4>
 
@@ -594,7 +594,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; CVEC_HashFunctionForCVecs</code>( <var class="Arg">v</var>, <var class="Arg">data</var> )</td><td class="tdright">( function )</td></tr></table></div>
 <p>Returns: an integer hash value</p>
 
-<p>This is a hash function usable for the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/neunhoef/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework. It takes as arguments a <code class="code">cvec</code> <var class="Arg">v</var> and a list <var class="Arg">data</var> of length <span class="SimpleMath">\(2\)</span>. The first entry of <var class="Arg">data</var> is the length of the hash table used and the second entry is the number of bytes looked at in the <code class="code">cvec</code>.</p>
+<p>This is a hash function usable for the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework. It takes as arguments a <code class="code">cvec</code> <var class="Arg">v</var> and a list <var class="Arg">data</var> of length <span class="SimpleMath">\(2\)</span>. The first entry of <var class="Arg">data</var> is the length of the hash table used and the second entry is the number of bytes looked at in the <code class="code">cvec</code>.</p>
 
 <p><a id="X7ACED4FB7C971A5A" name="X7ACED4FB7C971A5A"></a></p>
 
@@ -603,7 +603,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; ChooseHashFunction</code>( <var class="Arg">v</var>, <var class="Arg">hashlen</var> )</td><td class="tdright">( method )</td></tr></table></div>
 <p>Returns: a record describing a hash function</p>
 
-<p>Chooses a hash function to store <code class="code">cvec</code>s like <var class="Arg">v</var> in a hash table of length <var class="Arg">hashlen</var>. The return value is a record with components <code class="code">func</code> and <code class="code">data</code> bound to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4_mj.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>) and a list of length <span class="SimpleMath">\(2\)</span> to be given as a second argument to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4_mj.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>). This allows to use <code class="code">cvec</code>s in the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/neunhoef/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework.</p>
+<p>Chooses a hash function to store <code class="code">cvec</code>s like <var class="Arg">v</var> in a hash table of length <var class="Arg">hashlen</var>. The return value is a record with components <code class="code">func</code> and <code class="code">data</code> bound to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4_mj.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>) and a list of length <span class="SimpleMath">\(2\)</span> to be given as a second argument to <code class="func">CVEC_HashFunctionForCVecs</code> (<a href="chap4_mj.html#X7F0228A18327F87D"><span class="RefLink">4.7-1</span></a>). This allows to use <code class="code">cvec</code>s in the <code class="func">ChooseHashFunction</code> (<a href="/Users/mhorn/Projekte/GAP/repos/pkg/orb/doc/chap4_mj.html#X7ACED4FB7C971A5A"><span class="RefLink">orb: ChooseHashFunction</span></a>) framework.</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap3_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap5_mj.html">[Next Chapter]</a>&nbsp;  </div>
